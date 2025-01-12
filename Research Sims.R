@@ -3,12 +3,12 @@ library(ggplot2)
 library(tidyverse)
 library(rootSolve)
 
-ntrials <- 500
+ntrials <- 50 # from 500
 dim.min <- 3
-dim.max <- 100
+dim.max <- 10 # from 100
 dim.range <- dim.max-dim.min+1
 
-dev.off()
+#dev.off()
 dev.new()
 
 # Define the RealScalingNormalMethod function
@@ -659,3 +659,9 @@ for (j in 1:10000) {
     thetas[j, d] <- 2*pi*runif(1, 0, 1)
 }
 
+
+
+
+
+# QUESTIONS
+# 1. how do generate a vector of independent gamma randome variable
